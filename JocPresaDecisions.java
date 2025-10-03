@@ -88,9 +88,28 @@ public class JocPresaDecisions {
                 hermita = esc.nextBoolean();
                 if (hermita) {
                     System.out.println("Has decidit anarr a l'ermita, i et dona una gemma que et potència la màgia i et guia per un camí segur fins a la cova");
+                    System.out.println("Entres per la entrada de la cova i et trobes de cara amb el domador y et veu la gemma i la identifica inmediatament, et dona l'opcio de donar-li la gemma a canvi del teu germà.");
+                    System.out.println("Acceptes el pacte? (si=true/no=false)");
+                    pacte = esc.nextBoolean();
+                    if (pacte) {
+                        System.out.println("Has decidit acceptar el pacte i li dones la gemma a canvi del teu germà, i marxeu cap al poble.");
+                        System.out.println("FI");
+                        System.out.println("FINAL NEGOCIADOR");
+                    }
+                    else {
+                        System.out.println("Has decidit no acceptar el pacte i t'enfrontes al domador i el seu drac, per sort tens el bastó i la gemma potenciedora del basto i guanyes l'enfrontament en un vist i no vist.");
+                        System.out.println("Alliberes al teu germà i marxeu cap al poble.");
+                        System.out.println("FI");
+                        System.out.println("FINAL HERÒIC");
+                    }
                 }
                 else {
                     System.out.println("Has decidit anar a la forja i et dona una armadura per si de cas t'enfrontes al domador i el seu drac junt amb el camí per arribar a la cova");
+                    System.out.println("Entres per la entrada de la cova i et trobes de cara amb el domador i haurás de batallar per recuperar al teu germà.");
+                    System.out.println("Però per sort tens el bastó i l'armadura i guanyes l'enfrontament en un vist i no vist.");
+                    System.out.println("Alliberes al teu germà i marxeu cap al poble.");
+                    System.out.println("FI");
+                    System.out.println("FINAL HERÒIC");
                     
                 }
                 
@@ -103,11 +122,52 @@ public class JocPresaDecisions {
             System.out.println("Has decidit no agafar el bastó i anar correns cap a la cova de cristalls màgics, però el camí es bifurca i penses que seria millor anar per la muntanya (RÀPID) o anar al poble del costat a preparar-se? ");
             System.out.println("Vols anar per la muntanya? (si=true/no=false)");
             montanya = esc.nextBoolean();
+
+            if (montanya) // si escull montanya
+            {
+                System.out.println("Has decidit anar a la montanya estás caminant pel bosc i et trobes amb una llum sortint de un camí pel bosc que es una possible sortida però també pel redera escoltes un cant");
+                System.out.println("Vols investigar d'on ve el cant? (si=true/no=false)");
+                cant = esc.nextBoolean();
+                if (cant) {
+                    System.out.println("Has decidit investigar el cant, resultava no ser res, arribes tard.");
+                    System.out.println("EL TEU GERMÀ MOR PER ARRIBAR TARD");
+                    System.out.println("FI");
+                    System.out.println("FINAL TRÀGIC");
+                } 
+                else // si no escull investigar cant
+                {
+                    System.out.println("Has decidit no investigar el cant i anar cap a la cova i et trobes de cara al drac i el domador y no et queda d'altre que enfrentarte al domador i el seu drac.");
+                    System.out.println("Però com que no portes el bastó ni res per defensar-te acabes abrassat per el foc del drac juntamanet amb el teu germà.");
+                    System.out.println("FI");
+                    System.out.println("FINAL TRÀGIC");
             
-        }
+                }
           
     
 
-  
+            }
+            else // si no escull montanya i escull poble
+            {
+                System.out.println("Has decidit anar al poble a preparar-te i de sobte pel camí veus una ermita i penses que podries anar al ermità a que t'ajudi o anar a la forja del poble a que et preparin per si de cas t'enfrontes al domador i el seu drac.");
+                System.out.println("Vols entrar a l'ermita? (si=true/no=false)");
+                hermita = esc.nextBoolean();
+                if (hermita) {
+                    System.out.println("Has decidit anar a l'ermita, però com no portes el bastó no et pot ajudar i et guia per un camí segur fins a la cova");
+                    System.out.println("Entres a la cova.");
+                    System.out.println("PERO NO TENS RES PER DEFENSARTE I ET TROBES DE CARA AMB EL DOMADOR I EL SEU DRAC I ACABES ABRASSAT PEL FOC DEL DRAC JUNTAMENT AMB EL TEU GERMÀ.");
+                    System.out.println("FI");
+                    System.out.println("FINAL TRÀGIC");
+                }
+                else {
+                    System.out.println("Has decidit anar a la forja i et dona una armadura i una espasa incleíble per si de cas t'enfrontes al domador i el seu drac junt amb el camí per arribar a la cova");
+                    System.out.println("Entres a la cova.");
+                    System.out.println("T ENFRONTES AL DOMADOR I EL SEU DRAC ACABES GUANYANT PERÒ FERIT, ENCARA QUE ET DONA PER ALLIBERAR AL TEU GERMÀ I MARXEU CAP AL POBLE.");
+                    System.out.println("FI");
+                    System.out.println("FINAL HERÒIC");
+                    
+                }
+                
+            }
+    }
  }
 }
