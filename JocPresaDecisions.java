@@ -59,6 +59,7 @@ public class JocPresaDecisions {
             System.out.println("Has decidit no agafar el bastó i anar correns cap a la cova de cristalls màgics, però el camí es bifurca i penses que seria millor anar per la muntanya (RÀPID) o anar al poble del costat a preparar-se?. ");
             System.out.println("Vols anar per la muntanya? (si=true/no=false)");
             montanya = esc.nextBoolean();
+            
         }
         }   
     }
